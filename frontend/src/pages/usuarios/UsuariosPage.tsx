@@ -49,7 +49,7 @@ export default function UsuariosPage() {
         <div className="space-y-6">
             <div className="flex items-center justify-between">
                 <div>
-                    <h1 className="text-2xl font-bold text-slate-900">Usuarios</h1>
+                    <h1 className="text-2xl font-bold text-slate-900">Usuario</h1>
                     <p className="text-slate-400 text-sm mt-1">Gestión de usuarios del sistema</p>
                 </div>
                 {esAdmin && (

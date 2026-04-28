@@ -31,27 +31,28 @@ export default function LoginPage() {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-[#f4f6fb] relative overflow-hidden">
-
+  <div
+  className="min-h-screen flex items-center justify-center relative overflow-hidden bg-cover bg-center bg-no-repeat"
+  style={{ backgroundImage: "url('/fondo-login.jpg')" }}
+  >
       {/* Fondo decorativo */}
-      <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute -top-32 -left-32 w-96 h-96 rounded-full bg-slate-200 opacity-40 blur-3xl" />
-        <div className="absolute -bottom-32 -right-32 w-96 h-96 rounded-full bg-slate-300 opacity-30 blur-3xl" />
-      </div>
+        {/* Capa oscura sobre la imagen */}
+        <div className="absolute inset-0 bg-black/50" />
 
       {/* Card */}
-      <div className="relative w-full max-w-md bg-white rounded-2xl shadow-xl shadow-slate-200 p-10">
+      <div className="relative w-full max-w-md bg-white/15 backdrop-blur-xl rounded-2xl shadow-2xl p-10 border border-white/30">
 
         {/* Header */}
         <div className="mb-8 text-center">
-          <h1 className="text-3xl font-bold text-slate-900 tracking-tight">Bienvenido</h1>
-          <p className="text-slate-400 text-sm mt-2">Ingresa tus datos para acceder al sistema</p>
+          <h1 className="text-3xl font-bold text-slate-900 tracking-tight">Comunidad Campesina de Marco</h1>
+          <p className="text-slate-400 text-base mt-2">Ingresa tus datos para acceder al sistema</p>
+
         </div>
 
         {/* Formulario */}
         <div className="space-y-5">
           <div className="space-y-1.5">
-            <Label htmlFor="email" className="text-slate-700 text-sm font-medium">
+            <Label htmlFor="email" className="text-slate-400 text-sm font-medium">
               Correo electrónico
             </Label>
             <Input
@@ -65,7 +66,7 @@ export default function LoginPage() {
           </div>
 
           <div className="space-y-1.5">
-            <Label htmlFor="password" className="text-slate-700 text-sm font-medium">
+            <Label htmlFor="password" className="text-slate-400 text-sm font-medium">
               Contraseña
             </Label>
             <div className="relative">

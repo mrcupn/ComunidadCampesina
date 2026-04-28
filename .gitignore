@@ -1,0 +1,18 @@
+# Dependencies
+node_modules/
+
+# Environment files (IMPORTANTE - nunca subas tus credenciales)
+.env
+.env.local
+.env.production
+
+# Build outputs
+dist/
+build/
+
+# Logs
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
